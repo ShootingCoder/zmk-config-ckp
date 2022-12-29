@@ -66,7 +66,7 @@
 			, <&gpio0 12 GPIO_ACTIVE_HIGH>
 			, <&gpio0 23 GPIO_ACTIVE_HIGH>
 			;
-
+			
 		row-gpios
 			= <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
