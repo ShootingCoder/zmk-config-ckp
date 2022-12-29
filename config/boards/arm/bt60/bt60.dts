@@ -57,7 +57,7 @@
 			, <&gpio0 3 GPIO_ACTIVE_HIGH>
 			, <&gpio0 2 GPIO_ACTIVE_HIGH>
 			, <&gpio0 28 GPIO_ACTIVE_HIGH>
-			, <&gpio0 29 GPIO_ACTIVE_HIGH>
+			, <&gpio0 10 GPIO_ACTIVE_HIGH>
 			, <&gpio0 30 GPIO_ACTIVE_HIGH>
 			, <&gpio0 31 GPIO_ACTIVE_HIGH>
 			, <&gpio0 5 GPIO_ACTIVE_HIGH>
@@ -94,14 +94,6 @@
 		label = "ENCODER_TWO";
 		a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
-		status = "okay";
-	};
-	encoder_3: encoder_3 {
-		compatible = "alps,ec11";
-		label = "encoder_3";
-		a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <4>;
 		status = "okay";
 	};
