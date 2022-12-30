@@ -51,7 +51,7 @@
 
 		col-gpios
 			= <&gpio1 11 GPIO_ACTIVE_HIGH>
-			, <&gpio1 10 GPIO_ACTIVE_HIGH>
+			, <&gpio1 29 GPIO_ACTIVE_HIGH>
 			, <&gpio1 13 GPIO_ACTIVE_HIGH>
 			, <&gpio1 15 GPIO_ACTIVE_HIGH>
 			, <&gpio0 3 GPIO_ACTIVE_HIGH>
@@ -97,14 +97,6 @@
 		resolution = <4>;
 		status = "okay";
 	};
-	encoder_3: encoder_3 {
-		compatible = "alps,ec11";
-		label = "encoder_3";
-		a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <4>;
-		status = "okay";
-	};	
 	backlight: pwmleds {
 		compatible = "pwm-leds";
 		label = "Backlight LEDs";
